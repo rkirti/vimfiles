@@ -1,0 +1,12 @@
+autocmd BufNewFile,BufRead *.txt set filetype=human
+autocmd BufNewFile,BufRead ~/Documents/blog/*.txt set filetype=human.html
+autocmd BufNewFile,BufRead *.html set filetype=html.human
+autocmd BufNewFile,BufRead *.p set filetype=gnuplot
+autocmd BufNewFile,BufRead *.m set filetype=octave
+autocmd BufNewFile,BufRead vimperator* set filetype=human.vimp
+autocmd BufNewFile,BufRead README set filetype=html.human
+autocmd BufNewFile *.c      r ~/.vim/templates/skel.c
+autocmd BufNewFile *.h      r ~/.vim/templates/skel.h
+autocmd BufNewFile *.cpp    r ~/.vim/templates/skel.cpp
+autocmd BufNewFile *.sh    r ~/.vim/templates/skel.sh
+autocmd BufNewFile Makefile r ~/.vim/templates/Makefile
