@@ -6,3 +6,4 @@ autocmd BufNewFile,BufRead *.m set filetype=octave
 autocmd BufNewFile,BufRead vimperator* set filetype=human.vimp
 autocmd BufNewFile,BufRead README set filetype=html.human
 autocmd BufNewFile Makefile r ~/.vim/templates/Makefile
+autocmd BufNewFile,BufRead *.pddl set filetype=lisp

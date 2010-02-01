@@ -54,4 +54,5 @@ imap  <silent> <F8>    <Esc>:TList<CR>
 
 " Copy the current position, into previously accessed buffer
 map \o                 <Esc>:call CopyCat() <CR>
+map ,e                  <Esc>:e <C-R>=expand("%:h")<CR>/
 

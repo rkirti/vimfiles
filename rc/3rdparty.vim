@@ -26,3 +26,6 @@ let b:match_ignorecase = 1
 
 source ~/.vim/rc/cscope.vim
 
+" Vimplate
+let Vimplate = "/home/teju/build/bin/vimplate"
+

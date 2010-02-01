@@ -1,4 +1,4 @@
 source ~/.vimrc
-colorscheme tango2
+colorscheme metacosm
 set guioptions=
 
