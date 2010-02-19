@@ -1,11 +1,11 @@
 [% classname=input("Class name: ") -%]
 /**
-* @file [% classname %].cpp
-* @author [% user.firstname %] [% user.lastname %] <[% user.mail %]>
-* @date [% date('%Y-%m-%d') %]
-* ... description ...
-*/
-#include "[% classname %].hpp"
+ * @file [% classname %].cpp
+ * @author [% user.firstname %] [% user.lastname %] <[% user.mail %]>
+ * @date [% date('%Y-%m-%d') %]
+ * ... description ...
+ */
+#include "[% classname %].h"
 
 [% classname %]::[% classname %]()
 {
@@ -13,18 +13,18 @@
 
 [% classname %]::~[% classname %]()
 {
-  // cleanup
+    // cleanup
 }
 
 [% classname %]::[% classname %]( const [% classname %]& other )
 {
-  *this=other;
+    *this=other;
 }
 
 [% classname %]& [% classname %]::operator=( const [% classname %]& other )
 {
-  if (this != &other){  // no self-assignment
-    // deep copy
-  }
-  return *this;
+    if (this != &other){  // no self-assignment
+        // deep copy
+    }
+    return *this;
 }

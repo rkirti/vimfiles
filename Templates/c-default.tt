@@ -1,10 +1,10 @@
 [% filename=input("File name: ") -%]
 /**
-* @file [% filename %].cpp
-* @author [% user.firstname %] [% user.lastname %] <[% user.mail %]>
-* @date [% date('%Y-%m-%d') %]
-* ... description ...
-*/
+ * @file [% filename %].cpp
+ * @author [% user.firstname %] [% user.lastname %] <[% user.mail %]>
+ * @date [% date('%Y-%m-%d') %]
+ * ... description ...
+ */
 
 int main( int argc, char* argv[] )
 {

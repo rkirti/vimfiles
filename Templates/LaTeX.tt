@@ -1,6 +1,5 @@
-[% titel=input('titel: ')
+[% titel=input('title: ')
    class=choice('class type: ', 'article', 'report', 'letter', 'book')
-   german=choice('language german: ', 'no', 'yes')
    tfsize=choice('typeface size: ', '10pt', '11pt', '12pt')
    paper=choice('paper: ', 'a4paper', 'a5paper', 'b5paper', 'letterpaper', 'legalpaper', 'executivepaper')
    titelpg=choice('titel page: ', 'notitlepage', 'titlepage')
@@ -11,15 +10,8 @@
 \usepackage{multicol}
 \usepackage{graphicx}    % extended graphics package.
 \usepackage{color}
-\usepackage{isolatin1}   % 8 bit character and ISO-8859 Latin-1 codes.
-\usepackage{eurosym}
 \usepackage{textcomp}    % allow TS1-encoding symbols.
 \usepackage{anysize}     % set margin sizes with simple commands.
-[% IF german=='yes' -%]
-\usepackage{german}
-[% END -%]
-\usepackage{html}
-\usepackage{hthtml}
 \usepackage[ps2pdf]{thumbpdf}
 \usepackage[
   ps2pdf,
@@ -51,11 +43,7 @@
 \marginsize{25mm}{25mm}{25mm}{15mm} %anysize, links*rechts*oben*unten
 \setlength{\parindent}{0mm}
 
-[% IF german=='yes' -%]
-\date{[% date('de_DE', '%d. %B %Y') %]}
-[% ELSE -%]
 \date{[% date('C', '%d. %B %Y') %]}
-[% END -%]
 \author{[% user.firstname %]~[% user.lastname %]}
 \title{[% titel %]}
 
@@ -66,14 +54,13 @@
 \tableofcontents
 \newpage
 
-% Beispiele
 %
 % URL
 % \href{http://napali.ch}{napali}
 % \url{http://napali.ch}
 % \url{mailto:stotz@gmx.ch}
 %
-% Bilder
+% Figures
 % \begin{figure}[htb]
 %   \begin{center}
 %     \includegraphics[scale=1]{logo}
@@ -91,9 +78,9 @@
 % \end{thebibliography}
 
 [% IF class=='book' -%]
-\chapter{Kapiteltitel}
+\chapter{Name}
 [% ELSE -%]
-\section{Sektionstitel}
+\section{Name}
 [% END -%]
 ...
 

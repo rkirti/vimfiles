@@ -15,7 +15,7 @@ source ~/.vim/rc/3rdparty.vim
 source ~/.vim/rc/keybindings.vim
 source ~/.vim/rc/abbr.vim
 
-colorscheme tango
+colorscheme evening
 syntax on
 
 " Autocmds
