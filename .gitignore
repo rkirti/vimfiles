@@ -1,4 +1,6 @@
 viminfo
+viminfo.tmp
 .VimballRecord
 view
 *.swp
+.netrwhist

@@ -16,15 +16,3 @@
     // cleanup
 }
 
-[% classname %]::[% classname %]( const [% classname %]& other )
-{
-    *this=other;
-}
-
-[% classname %]& [% classname %]::operator=( const [% classname %]& other )
-{
-    if (this != &other){  // no self-assignment
-        // deep copy
-    }
-    return *this;
-}

@@ -3,7 +3,9 @@
 "
 " This vimrc is distributed into many smaller files.
 
-set runtimepath=/home/teju/.vim,/usr/share/vim,/usr/share/vim/vim72/
+set runtimepath=/home/teju/.vim,/usr/share/vim,/usr/share/vim/vim73/
+
+let g:username="Arun Tejasvi Chaganty"
 
 source ~/.vim/macros/cmd.vim     " Quick convinence commands
 source ~/.vim/rc/general.vim     " Toplevel options
@@ -15,7 +17,7 @@ source ~/.vim/rc/3rdparty.vim
 source ~/.vim/rc/keybindings.vim
 source ~/.vim/rc/abbr.vim
 
-colorscheme evening
+" colorscheme evening
 syntax on
 
 " Autocmds

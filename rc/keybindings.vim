@@ -42,17 +42,17 @@ map   <silent> <F4>    :nohl<CR>
 set   pastetoggle=<F5>
 nmap  <silent> <F6>    :call GenTags()<CR>
 nmap  <silent> <F7>    :exe ":ptag ".expand("<cword>")<CR>
-map   <silent> <F8>    :TList<CR>
-nmap  <silent> <F12>   ggVGg? 
 
 imap  <silent> <F2>    <Esc>:write<CR>
 imap  <silent> <F3>    <Esc>:make<CR>
 imap  <silent> <F4>    <Esc>:nohl<CR>
 imap  <silent> <F6>    <Esc>:call GenTags()<CR>
 imap  <silent> <F7>    <Esc>:exe ":ptag ".expand("<cword>")<CR>
-imap  <silent> <F8>    <Esc>:TList<CR>
 
 " Copy the current position, into previously accessed buffer
 map \o                 <Esc>:call CopyCat() <CR>
 map ,e                  <Esc>:e <C-R>=expand("%:h")<CR>/
+
+" Map jj for escape
+imap jj <Esc>
 

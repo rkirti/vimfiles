@@ -29,3 +29,8 @@ function! QuickFixToggle ()
     endif
 endfunction
 
+" Use bc -l to evaluate the line in the " buffer
+function! BCEvaluate()
+endfunction
+
+

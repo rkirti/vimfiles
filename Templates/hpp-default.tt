@@ -17,35 +17,18 @@ class [% classname %]
     public:
         [% IF doxygen=='yes' -%]
 
-            /**
-             * Default constructor
-             */
-            [% END -%]
-            [% classname %]();
+        /**
+         * Default constructor
+         */
+        [% END -%]
+        [% classname %]();
         [% IF doxygen=='yes' -%]
 
-            /**
-             * Destructor
-             */
-            [% END -%]
-            virtual ~[% classname %]();
-        [% IF doxygen=='yes' -%]
-
-            /**
-             * Copy constructor
-             * @param other Reference on object to copy.
-             */
-            [% END -%]
-            [% classname %]( const [% classname %]& other );
-        [% IF doxygen=='yes' -%]
-
-            /** 
-             * Assignment operator
-             * @param other Reference on object to copy.
-             * @return Reference on initialisated object.
-             */
-            [% END -%]
-            [% classname %]& operator=( const [% classname %]& other );
+        /**
+         * Destructor
+         */
+        [% END -%]
+        virtual ~[% classname %]();
 
     private:
 

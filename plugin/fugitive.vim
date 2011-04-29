@@ -1,0 +1,1 @@
+/home/teju/Projects/vim-fugitive/plugin/fugitive.vim

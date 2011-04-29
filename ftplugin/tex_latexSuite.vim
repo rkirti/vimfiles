@@ -8,6 +8,10 @@ if !exists('s:initLatexSuite')
 	exec 'so '.fnameescape(expand('<sfile>:p:h').'/latex-suite/main.vim')
 
 	silent! do LatexSuite User LatexSuiteInitPost
+    set makeprg=make
+    map <silent> <F6>   <Esc>:!gnome-open expand("%:h:t")."pdf"<CR>
 endif
 
 silent! do LatexSuite User LatexSuiteFileType
+set makeprg=make
+map <silent> <F6>   <Esc>:exe "!gnome-open ". shellescape(expand("%:p:h:t")).".pdf"<CR>

@@ -29,3 +29,7 @@ source ~/.vim/rc/cscope.vim
 " Vimplate
 let Vimplate = "/home/teju/build/bin/vimplate"
 
+" Eclim
+let g:EclimHome = '/usr/share/vim/vimfiles/eclim'
+let g:EclimEclipseHome = '/usr/share/eclipse'
+

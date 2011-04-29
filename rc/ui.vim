@@ -12,4 +12,4 @@ set mouse=a         " Always enable mouse support
 set shortmess=atI   " Keep error messages short
 set nowrap          " Don't wrap.
 set linebreak       " If you *do* enable wrap, break at friendly characters (like space or hyphen)
-
+set guicursor=a:blinkon0
