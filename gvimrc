@@ -1,5 +1,5 @@
 source ~/.vimrc
-colorscheme metacosm
+colorscheme koehler
 set guioptions=
 set guifont=Inconsolata\ Medium\ 12
 

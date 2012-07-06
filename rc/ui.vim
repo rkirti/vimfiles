@@ -3,7 +3,7 @@ set wildmode=longest:full,full " Match as much as possible, and then on second t
 set wildignore=*.bak,*.o,*.e,*~ " Ignore temporary files, and stuff you'll never want to open
 set ruler   " Show the cursor position at the bottom
 set cmdheight=2     " Commandline usage
-set statusline=%F%m%r%h%w\ [%Y]\ [%04l,%04v][%p%%]\ [LEN=%L]\ %{VimBuddy()} " Status line shows filename (and some mode information), filetype, cursor position, and length of the file. The VimBuddy is a fun plugin for the heck of it
+set statusline=%F%m%r%h%w\ [%Y]\ [%04l,%04v][%p%%]\ [LEN=%L]\  " Status line shows filename (and some mode information), filetype, cursor position, and length of the file. The VimBuddy is a fun plugin for the heck of it
 set laststatus=2    " always show the status line
 set number          " Show line numbers
 set showcmd         " Show the unfinished command. Pretty useful
