@@ -8,12 +8,13 @@
 " Space - Move down a page
 " Backspace - Move up a page
 
-noremap <up> <ESC>:Ex<CR><ESC><C-W><C-W> 
-noremap <left> <ESC>:MBEbp<CR> 
-noremap <down> <ESC>:Tlist<CR> 
-noremap <right> <ESC>:MBEbn<CR>
-noremap <Space> <PageDown>
-noremap <Backspace> <PageUp>
+" [rkirti] : Disabling @arunchaganty's crazy bindings
+"noremap <up> <ESC>:Ex<CR><ESC><C-W><C-W> 
+"noremap <left> <ESC>:MBEbp<CR> 
+"noremap <down> <ESC>:Tlist<CR> 
+"noremap <right> <ESC>:MBEbn<CR>
+"noremap <Space> <PageDown>
+"noremap <Backspace> <PageUp>
 
 " Format the paragraph (or the current selection) at once
 nnoremap Q gqap
